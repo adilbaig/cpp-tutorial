@@ -1,6 +1,8 @@
 #include <iostream>
 #include <coroutine>
 
+using namespace std;
+
 generator<int> getInts(int first, int last){
   for (auto i= first; i <= last; ++i){
     co_yield i;

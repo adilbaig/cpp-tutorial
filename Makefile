@@ -6,3 +6,9 @@ udev_monitor_usb:
 
 simple-threads:
 	g++ concurrency/simple-threads.cpp -pthread -std=c++1z -obin/threads
+
+parellel_loop:
+	g++ -std=c++17 threadpool/parellel_loop.cpp -lpthread -obin/loop
+
+synced_stream:
+	g++ -std=c++17 threadpool/synced_stream.cpp -lpthread -obin/synced_stream
